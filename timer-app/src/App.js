@@ -24,7 +24,7 @@ export default class Timer extends Component {
                 } else {
                     this.setState(({ minutes }) => ({
                         minutes: minutes - 1,
-                        seconds: 59
+                        seconds: 10
                     }))
                 }
             } 
