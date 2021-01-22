@@ -10,6 +10,9 @@ export default class Timer extends Component {
         this.myInterval = setInterval(() => {
             const { seconds, minutes } = this.state
 
+            
+          
+
             if (seconds > 0) {
                 this.setState(({ seconds }) => ({
                     seconds: seconds - 1
@@ -32,14 +35,26 @@ export default class Timer extends Component {
         clearInterval(this.myInterval)
     }
 
+      handleClick(button) {
+    if (button === 'compare') {
+      this.setState(prevState => ({
+        compare: !prevState.compare,
+      }));
+    }
+  }
+
+
     render() {
         const { minutes, seconds } = this.state
         return (
-            <div>
+            <div>      
+                <button onClick={() => this.startTime()}>Start</button>
+
             
                 { minutes === 0 && seconds === 0
                     ? <h1>Kuhle</h1>
                     : <h1>start {minutes}:{seconds < 10 ? `0${seconds}` : seconds}</h1>
+
                    
                 }
                 
