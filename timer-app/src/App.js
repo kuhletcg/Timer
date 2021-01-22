@@ -35,13 +35,13 @@ export default class Timer extends Component {
         clearInterval(this.myInterval)
     }
 
-      handleClick(button) {
-    if (button === 'compare') {
-      this.setState(prevState => ({
-        compare: !prevState.compare,
-      }));
-    }
-  }
+  //     handleClick(button) {
+  //   if (button === 'compare') {
+  //     this.setState(prevState => ({
+  //       compare: !prevState.compare,
+  //     }));
+  //   }
+  // }
 
 
     render() {
