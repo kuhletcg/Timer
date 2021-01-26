@@ -6,6 +6,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
+  background-color: pink;
+
 }
 
 code {
@@ -16,4 +18,16 @@ button{
   height: auto;
   width: auto;
   margin: 20px;
+}
+h1{
+  color: green;
+}
+
+button {
+  border: round;
+  background-color: cornflowerblue;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
 }
